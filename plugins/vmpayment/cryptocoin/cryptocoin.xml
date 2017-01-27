@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2017 alx (http://alx.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="vmpayment" method="upgrade">
+	<name>plg_vmpayment_cryptocoin</name>
+	<author></author>
+	<creationDate>January 2017</creationDate>
+	<copyright>Copyright (c) 2017 alx. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://alx.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		
+	]]>
+	</description>
+
+	<files>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<filename plugin="cryptocoin">cryptocoin.php</filename>
+		<filename plugin="cryptocoin">helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_vmpayment_cryptocoin.ini</language>
+		<language tag="en-GB">en-GB.plg_vmpayment_cryptocoin.sys.ini</language>
+	</languages>
+
+    <vmconfig>
+        <fields addpath="/administrator/components/com_virtuemart/fields" />
+        <fields name="params">
+			<fieldset name="cryptocoin" addfieldpath="/plugins/vmpayment/cryptocoin/fields" >
+                <field name="notify_url" type="notifyurl" label="NOTIFY_URL_LBL" description="NOTIFY_URL_TIP"/>
+
+                <field type="text" name="box_id" label="BOX_ID_LBL" class="live"
+                       description="BOX_ID_TIP" />
+                <field type="text" name="public_key" label="PUBLIC_KEY_LBL" class="live"
+                       description="PUBLIC_KEY_TIP" />
+                <field type="text" name="private_key" label="PRIVATE_KEY_LBL" class="live"
+                       description="PRIVATE_KEY_TIP" />
+                <field type="text" name="webdev_key" label="WEBDEV_KEY_LBL" class="live"
+                       description="WEBDEV_KEY_TIP" />
+                <field type="text" name="min_amount" default="0"></field>
+                <field type="text" name="max_amount" default="0"></field>
+
+                <field type="list" name="box_type" label="BOX_TYPE_LBL" description="BOX_TYPE_TIP">
+                    <option value="paymentbox">payment_box_option</option>
+                    <option value="captchabox">captchabox_box_option</option>
+                </field>
+
+                <field type="list" name="box_coin" label="BOX_COIN_LBL" description="BOX_COIN_TIP">
+                        <option value="" >SELECT_COIN</option>
+                        <option value="bitcoin">bitcoin</option>
+                        <option value="litecoin">litecoin</option>
+                        <option value="paycoin">paycoin</option>
+                        <option value="dogecoin">dogecoin</option>
+                        <option value="dash">dash</option>
+                        <option value="speedcoin">speedcoin</option>
+                        <option value="reddcoin">reddcoin</option>
+                        <option value="potcoin">potcoin</option>
+                        <option value="feathercoin">feathercoin</option>
+                        <option value="vertcoin">vertcoin</option>
+                        <option value="vericoin">vericoin</option>
+                        <option value="peercoin">peercoin</option>
+                        <option value="monetaryunit">monetaryunit</option>
+                        <option value="swiscoin">swiscoin</option>
+                </field>
+                <field name="order_status_success_first" type="vmorderstate" scope="com_virtuemart" default="C"
+                       label="PAYMENT_STATUS_SUCCESS_FIRST" description="PAYMENT_STATUS_SUCCESS_FIRST_TIP" />
+                <field name="order_status_success_next" type="vmorderstate" scope="com_virtuemart" default="C"
+                       label="PAYMENT_STATUS_SUCCESS_NEXT" description="PAYMENT_STATUS_SUCCESS_NEXT_TIP" />
+                <field name="exchange_rate" type="text" default="1.00" label="EXCHANGE_RATE_LBL"
+                       description="EXCHANGE_RATE_TIP" />
+                <field type="text" name="icon_width" label="ICON_WIDTH_LBL" description="ICON_WIDTH_DESC" />
+                <field type="text" name="frame_w" label="FRAME_WIDTH_LBL" description="FRAME_WIDTH_DESC" default="540"/>
+                <field type="text" name="frame_h" label="FRAME_WIDTH_LBL" description="FRAME_WIDTH_DESC" default="230"/>
+
+                <field type="text" name="message_style" label="MESSAGE_STYLE_LBL" description="MESSAGE_STYLE_TIP"
+                       class="live"
+                       default="display:inline-block;max-width:580px;padding:15px 20px;box-shadow:0 0 10px #aaa;-moz-box-shadow: 0 0 10px #aaa;margin:7px;font-size:13px;font-weight:normal;line-height:21px;font-family: Verdana, Arial, Helvetica, sans-serif;" />
+                <field type="text" name="box_style" label="BOX_STYLE_LBL" description="BOX_STYLE_TIP"
+                       class="live"
+                       default="" />
+                <field name="locale" type="list" label="LOCALE_LBL" description="LOCALE_DESC">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="ru">Russian</option>
+                    <option value="pl">Polish</option>
+                    <option value="nl">Dutch</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="fa">Persian</option>
+                    <option value="ko">Korean</option>
+                    <option value="ja">Japanese</option>
+                    <option value="id">Indonesian</option>
+                    <option value="ar">Arabic</option>
+                    <option value="cn">Chinese Simplified</option>
+                    <option value="zh">Chinese Traditional</option>
+                    <option value="hi">Hindi</option>
+                </field>
+			</fieldset>
+		</fields>
+	</vmconfig>
+</extension>
