@@ -257,7 +257,6 @@ abstract class vmPSPlugin extends vmPlugin {
 			return NULL;
 		}
 		$idName = $this->_psType . '_name';
-
 		return $pluginInfo->$idName;
 	}
 

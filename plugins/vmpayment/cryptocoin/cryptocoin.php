@@ -64,6 +64,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             'box_type' => "enum('paymentbox','captchabox') NOT NULL" ,
             'virtuemart_order_id'	=> 'int(1) UNSIGNED',
             'order_number'			=> 'char(64)',
+            'payment_name' => 'varchar(255)',
             'user_id' => "int(11) NOT NULL DEFAULT '0'" ,
             'country_code' => "varchar(3) NOT NULL DEFAULT ''" ,
 
@@ -173,8 +174,6 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
     function plgVmConfirmedOrder($cart, $order) {
         JFactory::getDocument()->addScript('plugins/vmpayment/cryptocoin/assets/js/cryptobox.js');
         $method = $this->getVmPluginMethod($cart->virtuemart_paymentmethod_id);
-//        var_dump($method->message_style);
-
 
         $db = JFactory::getDbo();
         $db->setQuery(
@@ -186,28 +185,41 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
         $iframe_id = 'box' . CryptoCoinHelper::icrc32($method->box_id."__".
                 (int)$order['details']['BT']->virtuemart_order_id."__".$user_id."__".$method->private_key);
 
-        $row = $db->loadObject();
-        $this->getPaymentCurrency ($method);
+        $c = substr(CryptoCoinHelper::right(CryptoCoinHelper::left($method->public_key, "PUB"), "AA"), 5);
+        $coinLabel = CryptoCoinHelper::right($c, "77");
+        $coinName = CryptoCoinHelper::left($c, "77");
 
         $currency_code_3 = shopFunctions::getCurrencyByID ($method->payment_currency, 'currency_code_3');
-
         if ($currency_code_3 != 'USD'){
             $amount_usd = CryptoCoinHelper::convert_currency_live($currency_code_3, 'USD', $order['details']['BT']->order_total);
-
         } else {
             $amount_usd = $order['details']['BT']->order_total;
         }
 
         $amount_usd = rtrim(rtrim($amount_usd, "0"), ".");
-
-//        $amount_coins =  CryptoCoinHelper::convert_currency_live('USD', $method->box_coin, $amount_usd);
-//        var_dump($amount_coins);
-
         $amount_coins = 0;
+
+        $row = $db->loadObject();
+        if (!$row){
+            $data = array(
+                'virtuemart_order_id' =>(int)$order['details']['BT']->virtuemart_order_id,
+                'order_number' => $order['details']['BT']->order_number,
+                'user_id' => $user_id,
+                'coin_label' => $coinLabel,
+                'amount' => $amount_coins,
+                'amount_usd' => $amount_usd,
+                'unrecognised' => -1,
+                'created_on' => JFactory::getDate()->toSql(),
+                'payment_name' => $method->payment_name
+            );
+            $this->storePluginInternalData($data);
+        }
+//        var_dump($this->_tablename, $this->_tablepkey);
+
+        $this->getPaymentCurrency ($method);
+
+
         $expiry = 'NOEXPIRY';
-        $c = substr(CryptoCoinHelper::right(CryptoCoinHelper::left($method->public_key, "PUB"), "AA"), 5);
-        $coinLabel = CryptoCoinHelper::right($c, "77");
-        $coinName = CryptoCoinHelper::left($c, "77");
 
         $hash_data = array(
             $method->box_id,
