@@ -154,6 +154,9 @@ class CryptoCoinHelper
     public static  function get_locales(){
         return self::$_localisation;
     }
+    public static function locale_signs($key){
+        return self::$_localisation[$key];
+    }
     public static function icrc32($str)
     {
         $in = crc32($str);

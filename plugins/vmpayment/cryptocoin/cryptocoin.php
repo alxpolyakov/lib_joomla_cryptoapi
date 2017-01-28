@@ -208,26 +208,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
         $c = substr(CryptoCoinHelper::right(CryptoCoinHelper::left($method->public_key, "PUB"), "AA"), 5);
         $coinLabel = CryptoCoinHelper::right($c, "77");
         $coinName = CryptoCoinHelper::left($c, "77");
-/*
- *$hash_str = $this->boxID
-		.$this->coinName
-		.$this->public_key
-		.$this->private_key
-		.$this->webdev_key
-		.$this->amount
-		.$this->period
-		.$this->amountUSD
-		.$this->language
-		.$this->amount
-		.$this->iframeID
-		.$this->amountUSD
-		.$this->userID
-		.$this->userFormat
-		.$this->orderID
-		.$width
-		.$height;
-		$hash = md5($hash_str);
- */
+
         $hash_data = array(
             $method->box_id,
             $coinName,
@@ -249,6 +230,8 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
         );
         $hash = md5(implode('', $hash_data));
         $html = array();
+        $form_value = md5($iframe_id . $method->private_key. $user_id);
+
         $html[]=$this->renderByLayout('iframe',
             array('method' => $method,
                 'order_bt'=>$order['details']['BT'],
@@ -261,27 +244,14 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
                         ."*&*".$method->box_id."*&*".$method->box_coin."*&*"
                         .$order['details']['BT']->virtuemart_order_id),
                 'hash' => $hash, 'coinLabel' => $coinLabel, 'coinName' => $coinName,
+                'form_value' => $form_value,
+                'user_format' => 'MANUAL'
             )
         );
-//
-//        var_dump(array('method' => $method,
-//            'order_bt'=>$order['details']['BT'],
-//            'iframe_id' => $iframe_id,
-//            'amount'=>$amount_coins,
-//            'amount_usd' => $amount_usd,
-//            'expiry' => $expiry,
-//            'user_id' => $user_id,
-//            'cookie_name' => 'cryptoUser'. CryptoCoinHelper::icrc32($method->private_key
-//                    ."*&*".$method->box_id."*&*".$method->box_coin."*&*"
-//                    .$order['details']['BT']->virtuemart_order_id),
-//            'hash' => $hash
-//        ));
 
         vRequest::setVar('html', implode('', $html));
-//        var_dump(__FILE__.':'.__LINE__);
+
         return TRUE;
-
-
     }
 
 }
