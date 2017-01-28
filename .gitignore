@@ -2,3 +2,4 @@ configuration.php
 cache/*
 administrator/cache/*
 administrator/logs/*
+administrator/components/com_virtuemart/virtuemart.cfg

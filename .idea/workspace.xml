@@ -37,16 +37,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="iframe.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="iframe.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin/tmpl/iframe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47674417" vertical-offset="238" max-vertical-offset="1098">
+            <state vertical-scroll-proportion="-15.185185" vertical-offset="238" max-vertical-offset="1098">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopfunctions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/helpers/shopfunctions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.5263157" vertical-offset="18750" max-vertical-offset="22392">
+              <caret line="1056" column="0" selection-start-line="1056" selection-start-column="0" selection-end-line="1056" selection-end-column="0" />
+              <folding>
+                <marker date="1485588568753" expanded="true" signature="3059:3164" placeholder="SELECT `vend..." />
+                <marker date="1485588568753" expanded="true" signature="3564:3634" placeholder="SELECT `virt..." />
+                <marker date="1485588568753" expanded="true" signature="8214:8270" placeholder="SELECT * FRO..." />
+                <marker date="1485588568753" expanded="true" signature="14703:15231" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="14724:14892" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="14813:14882" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="14902:14963" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="14987:15066" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="15090:15222" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="21452:21567" placeholder="SELECT `virt..." />
+                <marker date="1485588568753" expanded="true" signature="21960:22026" placeholder="SELECT * FRO..." />
+                <marker date="1485588568753" expanded="true" signature="23617:23727" placeholder="SELECT `virt..." />
+                <marker date="1485588568753" expanded="true" signature="36094:36197" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="36116:36187" placeholder="..." />
+                <marker date="1485588568753" expanded="true" signature="36698:37207" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.02057143" vertical-offset="0" max-vertical-offset="875">
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,11 +131,12 @@
         <option value="$PROJECT_DIR$/landing/php/process.php" />
         <option value="$PROJECT_DIR$/components/com_virtuemart/views/cart/tmpl/order_done.php" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/assets/js/cryptobox.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/helper.php" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin/tmpl/iframe.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_virtuemart/helpers/shopfunctions.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -151,20 +188,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cryptocoin.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cryptocoin.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cryptocoin.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="administrator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,13 +314,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/klarna/klarna/tmpl/payment_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8298">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_virtuemart/views/cart/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4916" max-vertical-offset="9576">
@@ -665,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08228572" vertical-offset="0" max-vertical-offset="875">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_virtuemart/views/cart/tmpl/order_done.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20618556" vertical-offset="0" max-vertical-offset="873">
@@ -717,13 +725,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin/tmpl/iframe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47674417" vertical-offset="238" max-vertical-offset="1098">
+        <state vertical-scroll-proportion="-15.185185" vertical-offset="238" max-vertical-offset="1098">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/helpers/shopfunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5263157" vertical-offset="18750" max-vertical-offset="22392">
+          <caret line="1056" column="0" selection-start-line="1056" selection-start-column="0" selection-end-line="1056" selection-end-column="0" />
+          <folding>
+            <marker date="1485588568753" expanded="true" signature="3059:3164" placeholder="SELECT `vend..." />
+            <marker date="1485588568753" expanded="true" signature="3564:3634" placeholder="SELECT `virt..." />
+            <marker date="1485588568753" expanded="true" signature="8214:8270" placeholder="SELECT * FRO..." />
+            <marker date="1485588568753" expanded="true" signature="14703:15231" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="14724:14892" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="14813:14882" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="14902:14963" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="14987:15066" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="15090:15222" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="21452:21567" placeholder="SELECT `virt..." />
+            <marker date="1485588568753" expanded="true" signature="21960:22026" placeholder="SELECT * FRO..." />
+            <marker date="1485588568753" expanded="true" signature="23617:23727" placeholder="SELECT `virt..." />
+            <marker date="1485588568753" expanded="true" signature="36094:36197" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="36116:36187" placeholder="..." />
+            <marker date="1485588568753" expanded="true" signature="36698:37207" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02057143" vertical-offset="0" max-vertical-offset="875">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
