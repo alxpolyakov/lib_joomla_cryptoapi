@@ -282,6 +282,8 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $data[$k] = $input->post->get($k);
         }
 
+        var_dump($data);
+
 
         if (!in_array($data['status'], array("payment_received", "payment_received_unrecognised"))){
             die('invalid status');
