@@ -304,6 +304,10 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             die('Order not found');
         }
 
+        $fp = fopen(JFactory::getApplication()->get('tmp_path').'/inuital-data-'.$order->virtuemart_order_id.'.json', 'w');
+        fwrite($fp, json_encode($data));
+        fclose($fp);
+
         $method = $this->getVmPluginMethod($order->virtuemart_paymentmethod_id);
         if($method->private_key != $data['private_key']){
 
