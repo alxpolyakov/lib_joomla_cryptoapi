@@ -263,6 +263,8 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
         );
 
         vRequest::setVar('html', implode('', $html));
+//        $cart = VirtueMartCart::getCart ();
+        $cart->emptyCart ();
 
         return TRUE;
     }
@@ -316,8 +318,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $row->addr = $data['addr'];
             $row->tx_id = $data['tx'];
             $row->confirmed = $data['confirmed'];
-            $row->tx_date = JFactory::getDate($data['timestamp'])->toSql();
-            $row->modified_on = JFactory::getDate()->toSql();
+
             //.$this->private_key.$this->userID.$this->orderID.$this->language.$this->period.$ip
             $check_data = array(
                 'private_key' => $method->private_key,
@@ -348,9 +349,60 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response-'.$order->virtuemart_order_id.'.json', 'w');
             fwrite($fp, json_encode($resp));
             fclose($fp);
-            die('finished');
 
-            //$this->storePluginInternalData($row, $row->id);
+            if(!is_object($resp)){
+                die('Invalid response');
+            }
+            $resp = (object)array(
+                'status' => 'payment_received',
+                'err' => '',
+                'private_key' => '8270AAwgOMgDogecoin77DOGEPRV31FlkaNESfjomGq2yD0X6l',
+                'box' => '8270',
+                'boxtype' => 'paymentbox',
+                'order' => '90',
+                'user' => '833',
+                'usercountry' => 'BLR',
+                'amount' => '101.575',
+                'amountusd' => '0.02',
+                'coinlabel' => 'DOGE',
+                'coinname' => 'dogecoin',
+                'addr' => 'DSzS47QrbJG9H4DrwaAaGiKD14p56NafSn',
+                'tx' => 'f3df2617e4569b7a554f3a971d8760141072a8257795ffc64ffcb30f7f04acc8',
+                'confirmed' => '0',
+                'timestamp' => 1485898222,
+                'date' => '31 January 2017',
+                'datetime' => '2017-01-31 21:30:22',
+            );
+            $row->addr = $resp->addr;
+            $row->amount = $resp->amount;
+            $row->confirmed = $resp->confirmed;
+//            $row->processed_date = JFactory::getDate($resp->timestamp);
+            $row->tx_id = $resp->tx;
+            $row->tx_date = JFactory::getDate($resp->timestamp)->toSql();
+            $row->modified_on = JFactory::getDate()->toSql();
+            $this->storePluginInternalData($data);
+
+            $tbl = $this->createPluginTableObject($this->_tablename, $this->tableFields, $this->_tablepkey, $row->id);
+            $tbl->bindChecknStore($row);
+            $sql = $db->getQuery(true)->select('count(*) as cnt')->from($this->_tablename)->where('addr='.$db->quote($resp->addr));
+            $db->setQuery($sql);
+            $num_payments = $db->loadObject();
+            $order_status = '';
+            if(is_object($num_payments)){
+                if($num_payments->cnt > 1){
+                    $order_status = $method->order_status_success_next;
+                } elseif ($num_payments->cnt == 1){
+                    $order_status = $method->order_status_success_first;
+                }
+                $db->setQuery(
+                    $db->getQuery(true)->update('#__virtuemart_orders')
+                        ->set('order_status='.$db->quote($order_status))
+                        ->where('virtuemart_order_id='.(int)$order->virtuemart_order_id)
+                );
+                $db->execute();
+
+            }
+
         }
     }
 

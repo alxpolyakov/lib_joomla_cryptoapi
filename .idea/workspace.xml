@@ -28,10 +28,27 @@
       <file leaf-file-name="cryptocoin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72164947" vertical-offset="5634" max-vertical-offset="6552">
-              <caret line="348" column="41" selection-start-line="348" selection-start-column="41" selection-end-line="348" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.6701031" vertical-offset="4203" max-vertical-offset="7488">
+              <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
               <folding>
                 <element signature="e#6#151#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heidelpay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/vmpayment/heidelpay/heidelpay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.736842" vertical-offset="6456" max-vertical-offset="14454">
+              <caret line="399" column="32" selection-start-line="398" selection-start-column="12" selection-end-line="399" selection-end-column="32" />
+              <folding>
+                <marker date="1474383412000" expanded="true" signature="2057:2137" placeholder="SELECT * FRO..." />
+                <marker date="1474383412000" expanded="false" signature="2815:2846" placeholder="..." />
+                <marker date="1474383412000" expanded="false" signature="2944:2976" placeholder="..." />
+                <marker date="1474383412000" expanded="false" signature="3068:3099" placeholder="..." />
+                <marker date="1474383412000" expanded="true" signature="14534:14614" placeholder="SELECT * FRO..." />
+                <marker date="1474383412000" expanded="true" signature="17776:17856" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -40,24 +57,9 @@
       <file leaf-file-name="configuration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configuration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1764">
+            <state vertical-scroll-proportion="-26.481482" vertical-offset="347" max-vertical-offset="1764">
               <caret line="59" column="20" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vmplugin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmplugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10405" max-vertical-offset="13788">
-              <caret line="594" column="46" selection-start-line="594" selection-start-column="23" selection-end-line="594" selection-end-column="46" />
-              <folding>
-                <marker date="1485606852854" expanded="true" signature="7847:8039" placeholder="SELECT vm.* ..." />
-                <marker date="1485606852854" expanded="true" signature="8754:9015" placeholder="SELECT vm.* ..." />
-                <marker date="1485606852854" expanded="true" signature="9454:9592" placeholder="SELECT j.`ex..." />
-                <marker date="1485606852854" expanded="true" signature="12561:12617" placeholder="CREATE TABLE..IF..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,25 +84,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="skrill.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/vmpayment/skrill/skrill.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2262" max-vertical-offset="14400">
-              <caret line="150" column="76" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="76" />
-              <folding>
-                <element signature="e#7#612#0#PHP" expanded="true" />
-                <marker date="1474383414000" expanded="true" signature="4018:4065" placeholder="SELECT * FRO..." />
-                <marker date="1474383414000" expanded="true" signature="8473:8599" placeholder="SELECT `curr..." />
-                <marker date="1474383414000" expanded="true" signature="14856:15085" placeholder="..." />
-                <marker date="1474383414000" expanded="true" signature="14862:15079" placeholder="..." />
-                <marker date="1474383414000" expanded="true" signature="14908:15072" placeholder="..." />
-                <marker date="1474383414000" expanded="true" signature="14961:15045" placeholder="{...}" />
-                <marker date="1474383414000" expanded="true" signature="21544:21676" placeholder="SELECT `curr..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/helper.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,8 +97,8 @@
       <file leaf-file-name="cryptocoin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="507" max-vertical-offset="2160">
-              <caret line="45" column="52" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1209" max-vertical-offset="2160">
+              <caret line="74" column="55" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -203,6 +186,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vmpayment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cryptocoin.loc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vmpayment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,13 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_virtuemart/helpers/cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35421687" vertical-offset="28938" max-vertical-offset="32742">
-          <caret line="1624" column="0" selection-start-line="1624" selection-start-column="0" selection-end-line="1624" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -533,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/heidelpay/heidelpay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2280703" vertical-offset="2180" max-vertical-offset="14454">
-          <caret line="144" column="105" selection-start-line="142" selection-start-column="8" selection-end-line="144" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/amazon/tmpl/addressbook_wallet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.87906975" vertical-offset="756" max-vertical-offset="1692">
@@ -602,13 +625,13 @@
           <caret line="150" column="76" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="76" />
           <folding>
             <element signature="e#7#612#0#PHP" expanded="true" />
-            <marker date="1474383414000" expanded="true" signature="4018:4065" placeholder="SELECT * FRO..." />
-            <marker date="1474383414000" expanded="true" signature="8473:8599" placeholder="SELECT `curr..." />
-            <marker date="1474383414000" expanded="true" signature="14856:15085" placeholder="..." />
-            <marker date="1474383414000" expanded="true" signature="14862:15079" placeholder="..." />
-            <marker date="1474383414000" expanded="true" signature="14908:15072" placeholder="..." />
-            <marker date="1474383414000" expanded="true" signature="14961:15045" placeholder="{...}" />
-            <marker date="1474383414000" expanded="true" signature="21544:21676" placeholder="SELECT `curr..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="SELECT `curr..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="SELECT `curr..." />
           </folding>
         </state>
       </provider>
@@ -629,41 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmpsplugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325301" vertical-offset="12990" max-vertical-offset="25434">
-          <caret line="737" column="30" selection-start-line="737" selection-start-column="29" selection-end-line="737" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/amazon/amazon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33291924" vertical-offset="8480" max-vertical-offset="67266">
-          <caret line="486" column="46" selection-start-line="486" selection-start-column="20" selection-end-line="486" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/paypal/paypal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8947368" vertical-offset="13350" max-vertical-offset="27360">
-          <caret line="754" column="39" selection-start-line="754" selection-start-column="13" selection-end-line="754" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmplugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10405" max-vertical-offset="13788">
-          <caret line="594" column="46" selection-start-line="594" selection-start-column="23" selection-end-line="594" selection-end-column="46" />
-          <folding>
-            <marker date="1485606852854" expanded="true" signature="7847:8039" placeholder="SELECT vm.* ..." />
-            <marker date="1485606852854" expanded="true" signature="8754:9015" placeholder="SELECT vm.* ..." />
-            <marker date="1485606852854" expanded="true" signature="9454:9592" placeholder="SELECT j.`ex..." />
-            <marker date="1485606852854" expanded="true" signature="12561:12617" placeholder="CREATE TABLE..IF..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/joomla/http/http.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8726415" vertical-offset="5362" max-vertical-offset="6210">
@@ -678,14 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="507" max-vertical-offset="2160">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4126" max-vertical-offset="5058">
@@ -694,18 +674,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/amazon/amazon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="67266">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmpsplugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.62963" vertical-offset="127" max-vertical-offset="25434">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1485591991609" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT name,..#__users..." />
+            <marker date="1485591991609" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..#__virtuemart_calcs..." />
+            <marker date="1485591991609" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..#__virtuemart_calcs..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmplugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46708074" vertical-offset="10424" max-vertical-offset="13788">
+          <caret line="600" column="101" selection-start-line="600" selection-start-column="90" selection-end-line="600" selection-end-column="101" />
+          <folding>
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT vm.* ..." />
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT vm.* ..." />
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT j.`ex..." />
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1764">
+        <state vertical-scroll-proportion="-26.481482" vertical-offset="347" max-vertical-offset="1764">
           <caret line="59" column="20" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1209" max-vertical-offset="2160">
+          <caret line="74" column="55" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/heidelpay/heidelpay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.736842" vertical-offset="6456" max-vertical-offset="14454">
+          <caret line="399" column="32" selection-start-line="398" selection-start-column="12" selection-end-line="399" selection-end-column="32" />
+          <folding>
+            <marker date="1474383412000" expanded="true" signature="2057:2137" placeholder="SELECT * FRO..." />
+            <marker date="1474383412000" expanded="false" signature="2815:2846" placeholder="..." />
+            <marker date="1474383412000" expanded="false" signature="2944:2976" placeholder="..." />
+            <marker date="1474383412000" expanded="false" signature="3068:3099" placeholder="..." />
+            <marker date="1474383412000" expanded="true" signature="14534:14614" placeholder="SELECT * FRO..." />
+            <marker date="1474383412000" expanded="true" signature="17776:17856" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_virtuemart/helpers/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34302327" vertical-offset="1343" max-vertical-offset="32454">
+          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+          <folding>
+            <marker date="1485382698595" expanded="true" signature="-1:-1" placeholder="SELECT `virt..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/paypal/paypal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29302326" vertical-offset="13878" max-vertical-offset="27036">
+          <caret line="803" column="30" selection-start-line="803" selection-start-column="26" selection-end-line="803" selection-end-column="30" />
+          <folding>
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1474383414000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474383414000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72164947" vertical-offset="5634" max-vertical-offset="6552">
-          <caret line="348" column="41" selection-start-line="348" selection-start-column="41" selection-end-line="348" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.6701031" vertical-offset="4203" max-vertical-offset="7488">
+          <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
           <folding>
             <element signature="e#6#151#0#PHP" expanded="true" />
           </folding>
