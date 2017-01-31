@@ -268,7 +268,11 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
     }
 
     function plgVmOnPaymentNotification(){
+
         $input = JFactory::getApplication()->input;
+        if($input->server->get('REQUEST_METHOD') != 'POST'){
+            die('Only POST Data Allowed');
+        }
         $keys = array("status", "err", "private_key", "box", "boxtype", "order", "user", "usercountry",
         "amount", "amountusd", "coinlabel", "coinname", "addr", "tx", "confirmed", "timestamp", "date", "datetime");
         $data = array();
