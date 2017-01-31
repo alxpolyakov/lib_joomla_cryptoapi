@@ -353,26 +353,26 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             if(!is_object($resp)){
                 die('Invalid response');
             }
-            $resp = (object)array(
-                'status' => 'payment_received',
-                'err' => '',
-                'private_key' => '8270AAwgOMgDogecoin77DOGEPRV31FlkaNESfjomGq2yD0X6l',
-                'box' => '8270',
-                'boxtype' => 'paymentbox',
-                'order' => '90',
-                'user' => '833',
-                'usercountry' => 'BLR',
-                'amount' => '101.575',
-                'amountusd' => '0.02',
-                'coinlabel' => 'DOGE',
-                'coinname' => 'dogecoin',
-                'addr' => 'DSzS47QrbJG9H4DrwaAaGiKD14p56NafSn',
-                'tx' => 'f3df2617e4569b7a554f3a971d8760141072a8257795ffc64ffcb30f7f04acc8',
-                'confirmed' => '0',
-                'timestamp' => 1485898222,
-                'date' => '31 January 2017',
-                'datetime' => '2017-01-31 21:30:22',
-            );
+//            $resp = (object)array(
+//                'status' => 'payment_received',
+//                'err' => '',
+//                'private_key' => '8270AAwgOMgDogecoin77DOGEPRV31FlkaNESfjomGq2yD0X6l',
+//                'box' => '8270',
+//                'boxtype' => 'paymentbox',
+//                'order' => '90',
+//                'user' => '833',
+//                'usercountry' => 'BLR',
+//                'amount' => '101.575',
+//                'amountusd' => '0.02',
+//                'coinlabel' => 'DOGE',
+//                'coinname' => 'dogecoin',
+//                'addr' => 'DSzS47QrbJG9H4DrwaAaGiKD14p56NafSn',
+//                'tx' => 'f3df2617e4569b7a554f3a971d8760141072a8257795ffc64ffcb30f7f04acc8',
+//                'confirmed' => '0',
+//                'timestamp' => 1485898222,
+//                'date' => '31 January 2017',
+//                'datetime' => '2017-01-31 21:30:22',
+//            );
             $row->addr = $resp->addr;
             $row->amount = $resp->amount;
             $row->confirmed = $resp->confirmed;
@@ -388,12 +388,13 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $db->setQuery($sql);
             $num_payments = $db->loadObject();
             $order_status = '';
-            if(is_object($num_payments)){
+            if(is_object($num_payments) && $resp->confirmed == 1){
                 if($num_payments->cnt > 1){
                     $order_status = $method->order_status_success_next;
                 } elseif ($num_payments->cnt == 1){
                     $order_status = $method->order_status_success_first;
                 }
+
                 $db->setQuery(
                     $db->getQuery(true)->update('#__virtuemart_orders')
                         ->set('order_status='.$db->quote($order_status))
@@ -407,4 +408,3 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
     }
 
 }
-?>
