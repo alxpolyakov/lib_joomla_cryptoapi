@@ -340,12 +340,12 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
 
             $post_data['h'] = md5(implode('', array_values($post_data)));
 
-            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/post.json', 'w');
+            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/post-'.$order->virtuemart_order_id.'.json', 'w');
             fwrite($fp, json_encode($post_data));
             fclose($fp);
 
             $resp = CryptoCoinHelper::check_payment($post_data);
-            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response.json', 'w');
+            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response-'.$order->virtuemart_order_id.'.json', 'w');
             fwrite($fp, json_encode($post_data));
             fclose($fp);
             die('finished');
