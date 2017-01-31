@@ -355,7 +355,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response-'.$order->virtuemart_order_id.'.json', 'w');
             fwrite($fp, json_encode($resp));
             fclose($fp);
-
+            var_dump($resp);
             if(!is_object($resp)){
                 die('Invalid response');
             }
