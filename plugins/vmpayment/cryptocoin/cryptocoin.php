@@ -353,26 +353,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             if(!is_object($resp)){
                 die('Invalid response');
             }
-//            $resp = (object)array(
-//                'status' => 'payment_received',
-//                'err' => '',
-//                'private_key' => '8270AAwgOMgDogecoin77DOGEPRV31FlkaNESfjomGq2yD0X6l',
-//                'box' => '8270',
-//                'boxtype' => 'paymentbox',
-//                'order' => '90',
-//                'user' => '833',
-//                'usercountry' => 'BLR',
-//                'amount' => '101.575',
-//                'amountusd' => '0.02',
-//                'coinlabel' => 'DOGE',
-//                'coinname' => 'dogecoin',
-//                'addr' => 'DSzS47QrbJG9H4DrwaAaGiKD14p56NafSn',
-//                'tx' => 'f3df2617e4569b7a554f3a971d8760141072a8257795ffc64ffcb30f7f04acc8',
-//                'confirmed' => '0',
-//                'timestamp' => 1485898222,
-//                'date' => '31 January 2017',
-//                'datetime' => '2017-01-31 21:30:22',
-//            );
+
             $row->addr = $resp->addr;
             $row->amount = $resp->amount;
             $row->confirmed = $resp->confirmed;
