@@ -28,8 +28,8 @@
       <file leaf-file-name="cryptocoin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63226575" vertical-offset="5965" max-vertical-offset="7254">
-              <caret line="361" column="34" selection-start-line="361" selection-start-column="34" selection-end-line="361" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.4614472" vertical-offset="6289" max-vertical-offset="7254">
+              <caret line="371" column="116" selection-start-line="371" selection-start-column="116" selection-end-line="371" selection-end-column="116" />
               <folding>
                 <element signature="e#6#151#0#PHP" expanded="true" />
               </folding>
@@ -702,19 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmplugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46708074" vertical-offset="10424" max-vertical-offset="13788">
-          <caret line="600" column="101" selection-start-line="600" selection-start-column="90" selection-end-line="600" selection-end-column="101" />
-          <folding>
-            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT vm.* ..." />
-            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT vm.* ..." />
-            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT j.`ex..." />
-            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.481482" vertical-offset="347" max-vertical-offset="1764">
@@ -728,21 +715,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1209" max-vertical-offset="2160">
           <caret line="74" column="55" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/heidelpay/heidelpay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.736842" vertical-offset="6456" max-vertical-offset="14454">
-          <caret line="399" column="32" selection-start-line="398" selection-start-column="12" selection-end-line="399" selection-end-column="32" />
-          <folding>
-            <marker date="1474383412000" expanded="true" signature="2057:2137" placeholder="SELECT * FRO..." />
-            <marker date="1474383412000" expanded="false" signature="2815:2846" placeholder="..." />
-            <marker date="1474383412000" expanded="false" signature="2944:2976" placeholder="..." />
-            <marker date="1474383412000" expanded="false" signature="3068:3099" placeholder="..." />
-            <marker date="1474383412000" expanded="true" signature="14534:14614" placeholder="SELECT * FRO..." />
-            <marker date="1474383412000" expanded="true" signature="17776:17856" placeholder="SELECT * FRO..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,10 +743,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmplugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34302327" vertical-offset="11153" max-vertical-offset="13788">
+          <caret line="636" column="85" selection-start-line="636" selection-start-column="74" selection-end-line="636" selection-end-column="85" />
+          <folding>
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT vm.* ..." />
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT vm.* ..." />
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="SELECT j.`ex..." />
+            <marker date="1485606852854" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/heidelpay/heidelpay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.736842" vertical-offset="6456" max-vertical-offset="14454">
+          <caret line="399" column="32" selection-start-line="398" selection-start-column="12" selection-end-line="399" selection-end-column="32" />
+          <folding>
+            <marker date="1474383412000" expanded="true" signature="2057:2137" placeholder="SELECT * FRO..." />
+            <marker date="1474383412000" expanded="false" signature="2815:2846" placeholder="..." />
+            <marker date="1474383412000" expanded="false" signature="2944:2976" placeholder="..." />
+            <marker date="1474383412000" expanded="false" signature="3068:3099" placeholder="..." />
+            <marker date="1474383412000" expanded="true" signature="14534:14614" placeholder="SELECT * FRO..." />
+            <marker date="1474383412000" expanded="true" signature="17776:17856" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63226575" vertical-offset="5965" max-vertical-offset="7254">
-          <caret line="361" column="34" selection-start-line="361" selection-start-column="34" selection-end-line="361" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.4614472" vertical-offset="6289" max-vertical-offset="7254">
+          <caret line="371" column="116" selection-start-line="371" selection-start-column="116" selection-end-line="371" selection-end-column="116" />
           <folding>
             <element signature="e#6#151#0#PHP" expanded="true" />
           </folding>

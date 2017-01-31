@@ -369,7 +369,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $row->modified_on = JFactory::getDate()->toSql();
             $this->storePluginInternalData($data);
 
-            $tbl = $this->createPluginTableObject($this->_tablename, $this->tableFields, $this->_tablepkey, $row->id);
+            $tbl = $this->createPluginTableObject($this->_tablename, $this->tableFields, $row->id, $this->_tablepkey);
             $tbl->bindChecknStore($row);
             $sql = $db->getQuery(true)->select('count(*) as cnt')->from($this->_tablename)->where('addr='.$db->quote($resp->addr));
             $db->setQuery($sql);
