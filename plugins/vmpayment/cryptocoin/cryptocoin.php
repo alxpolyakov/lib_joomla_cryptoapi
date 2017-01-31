@@ -65,6 +65,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             'virtuemart_order_id'	=> 'int(1) UNSIGNED',
             'order_number'			=> 'char(64)',
             'payment_name' => 'varchar(255)',
+            'payment_currency' => 'tinyint(4)',
             'user_id' => "int(11) NOT NULL DEFAULT '0'" ,
             'country_code' => "varchar(3) NOT NULL DEFAULT ''" ,
 
@@ -266,4 +267,88 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
         return TRUE;
     }
 
+    function plgVmOnPaymentNotification(){
+        $input = JFactory::getApplication()->input;
+        $keys = array("status", "err", "private_key", "box", "boxtype", "order", "user", "usercountry",
+        "amount", "amountusd", "coinlabel", "coinname", "addr", "tx", "confirmed", "timestamp", "date", "datetime");
+        $data = array();
+        foreach($keys as $k){
+            $data[$k] = $input->post->get($k);
+        }
+
+
+        if (!in_array($data['status'], array("payment_received", "payment_received_unrecognised"))){
+            die('invalid status');
+        }
+        $db = JFactory::getDbo();
+        $db->setQuery($db->getQuery(true)->select('*')
+                ->from($this->_tablename)
+                ->where('virtuemart_order_id='.(int)$data['order']));
+        $row = $db->loadObject();
+        if(!$row){
+            die('Plugin db record not found');
+        }
+
+        $db->setQuery($db->getQuery(true)->select('*')
+            ->from('#__virtuemart_orders')
+            ->where('virtuemart_order_id='.(int)$data['order']));
+
+        $order = $db->loadObject();
+        if(!$order){
+            die('Order not found');
+        }
+
+        $method = $this->getVmPluginMethod($order->virtuemart_paymentmethod_id);
+        if($method->private_key != $data['private_key']){
+
+            die('Incorrect key');
+        }
+        if($data['status'] == 'payment_received'){
+            $row->country_code = $data['usercountry'];
+            $row->amount = $data['amount'];
+            if($row->amount_usd != $data['amountusd']){
+                die('Incorrect amount USD');
+            }
+            $row->addr = $data['addr'];
+            $row->tx_id = $data['tx'];
+            $row->confirmed = $data['confirmed'];
+            $row->tx_date = JFactory::getDate($data['timestamp'])->toSql();
+            $row->modified_on = JFactory::getDate()->toSql();
+            //.$this->private_key.$this->userID.$this->orderID.$this->language.$this->period.$ip
+            $check_data = array(
+                'private_key' => $method->private_key,
+                'box_id' => $method->box_id,
+                'order_id' => $order->virtuemart_order_id,
+                'user_id' => $order->virtuemart_user_id ? $order->virtuemart_user_id : 'user_order_' . $order->virtuemart_order_id,
+                'period' =>'NOEXPIRY',
+                'language' =>$method->locale,
+                'ip' => CryptoCoinHelper::ip_address()
+            );
+            $keys_match = array('b' => 'box_id', 'r' => 'private_key',  'u'=>'user_id',
+                 'o'=>'order_id', 'l' => 'language', 'e' => 'period', 'i' => 'ip', 'h'=>'hash');
+
+            $post_data = array();
+            foreach($keys_match as $k=>$v){
+                if (isset($check_data[$v])){
+                    $post_data[$k] = $check_data[$v];
+                }
+            }
+
+            $post_data['h'] = md5(implode('', array_values($post_data)));
+
+            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/post.json', 'w');
+            fwrite($fp, json_encode($post_data));
+            fclose($fp);
+
+            $resp = CryptoCoinHelper::check_payment($post_data);
+            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response.json', 'w');
+            fwrite($fp, json_encode($post_data));
+            fclose($fp);
+            die('finished');
+
+            //$this->storePluginInternalData($row, $row->id);
+        }
+    }
+
 }
+?>

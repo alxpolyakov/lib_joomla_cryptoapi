@@ -598,7 +598,8 @@ abstract class vmPlugin extends JPlugin {
 			$primaryKey = $this->_tablepkey;
 		}
 		if ($this->_vmpItable === 0 or $id==0) {
-			$this->_vmpItable = $this->createPluginTableObject ($this->_tablename, $this->tableFields, $primaryKey, $this->_tableId, $this->_loggable);
+			$this->_vmpItable = $this->createPluginTableObject ($this->_tablename, $this->tableFields, $primaryKey, $this->_tableId,
+                $this->_loggable);
 		}
 
 		$this->_vmpItable->bindChecknStore ($values, $preload);

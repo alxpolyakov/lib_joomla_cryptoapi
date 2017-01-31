@@ -209,4 +209,68 @@ class CryptoCoinHelper
         if ($pos === false) return $str;
         else return substr($str, $pos + strlen($findme));
     }
+
+    public static function ip_address()
+    {
+        static $ip_address;
+
+        if ($ip_address) return $ip_address;
+
+        $server = JFactory::getApplication()->input->server;
+
+        $ip_address         = "";
+        $proxy_ips          = (defined("PROXY_IPS")) ? unserialize(PROXY_IPS) : array();  // your server internal proxy ip
+        $internal_ips       = array('127.0.0.0', '127.0.0.1', '127.0.0.2', '192.0.0.0', '192.0.0.1',
+            '192.168.0.0', '192.168.0.1', '192.168.0.253', '192.168.0.254', '192.168.0.255', '192.168.1.0',
+            '192.168.1.1', '192.168.1.253', '192.168.1.254', '192.168.1.255', '192.168.2.0', '192.168.2.1',
+            '192.168.2.253', '192.168.2.254', '192.168.2.255', '10.0.0.0', '10.0.0.1', '11.0.0.0',
+            '11.0.0.1', '1.0.0.0', '1.0.1.0', '1.1.1.1', '255.0.0.0', '255.0.0.1', '255.255.255.0',
+            '255.255.255.254', '255.255.255.255', '0.0.0.0', '::', '0::', '0:0:0:0:0:0:0:0');
+
+        for ($i = 1; $i <= 2; $i++)
+            if (!$ip_address)
+            {
+                foreach (array('HTTP_CLIENT_IP', 'HTTP_X_CLIENT_IP', 'HTTP_X_CLUSTER_CLIENT_IP', 'X-Forwarded-For',
+                             'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED',
+                             'HTTP_X_REAL_IP', 'REMOTE_ADDR') as $header)
+                    if (!$ip_address && $server->get($header))
+                    {
+                        $ip  = trim($server->get($header));
+                        $ip2 = "";
+                        if (strpos($ip, ',') !== FALSE)
+                        {
+                            list($ip, $ip2) = explode(',', $ip, 2);
+                            $ip = trim($ip);
+                            $ip2 = trim($ip2);
+                        }
+
+                        if ($ip && filter_var($ip, FILTER_VALIDATE_IP)
+                            && !in_array($ip, $proxy_ips) && ($i==2 || !in_array($ip, $internal_ips))) 				$ip_address = $ip;
+                        elseif ($ip2 && filter_var($ip2, FILTER_VALIDATE_IP) && !in_array($ip2, $proxy_ips) && ($i==2 || !in_array($ip2, $internal_ips))) 		$ip_address = $ip2;
+                    }
+            }
+
+        if (!$ip_address || !filter_var($ip_address, FILTER_VALIDATE_IP)) $ip_address = '0.0.0.0';
+
+        return $ip_address;
+    }
+
+    public static function check_payment($data){
+        $ch = curl_init( "https://coins.gourl.io/result.php" );
+        curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt( $ch, CURLOPT_POST, 1);
+        curl_setopt( $ch, CURLOPT_POSTFIELDS, http_build_query($data));
+        curl_setopt( $ch, CURLOPT_HEADER, 0);
+        curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, 20);
+        curl_setopt( $ch, CURLOPT_TIMEOUT, 20);
+
+        $res = curl_exec( $ch );
+
+        if ($res) {
+            $res = json_decode($res, true);
+            return $res;
+        }
+        return false;
+    }
 }
