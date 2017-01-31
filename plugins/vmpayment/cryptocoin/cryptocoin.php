@@ -356,10 +356,10 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             fwrite($fp, json_encode($resp));
             fclose($fp);
             var_dump($resp);
-            if(!is_object($resp)){
+            if(!is_object($resp) && !is_array($resp)){
                 die('Invalid response');
             }
-
+            $resp = (object)$resp;
             $row->addr = $resp->addr;
             $row->amount = $resp->amount;
             $row->confirmed = $resp->confirmed;
