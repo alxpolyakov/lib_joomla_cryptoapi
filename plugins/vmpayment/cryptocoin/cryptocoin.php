@@ -388,7 +388,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $db->setQuery($sql);
             $num_payments = $db->loadObject();
             $order_status = '';
-            if(is_object($num_payments) && $resp->confirmed == 1){
+            if(is_object($num_payments)){
                 if($num_payments->cnt > 1){
                     $order_status = $method->order_status_success_next;
                 } elseif ($num_payments->cnt == 1){
