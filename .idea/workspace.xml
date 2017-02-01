@@ -40,8 +40,8 @@
       <file leaf-file-name="table.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libraries/joomla/table/table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25748503" vertical-offset="4555" max-vertical-offset="30618">
-              <caret line="271" column="30" selection-start-line="271" selection-start-column="30" selection-end-line="271" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.60239524" vertical-offset="4555" max-vertical-offset="30636">
+              <caret line="287" column="78" selection-start-line="287" selection-start-column="78" selection-end-line="287" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -852,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/joomla/table/table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25748503" vertical-offset="4555" max-vertical-offset="30618">
-          <caret line="271" column="30" selection-start-line="271" selection-start-column="30" selection-end-line="271" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.60239524" vertical-offset="4555" max-vertical-offset="30636">
+          <caret line="287" column="78" selection-start-line="287" selection-start-column="78" selection-end-line="287" selection-end-column="78" />
           <folding />
         </state>
       </provider>
