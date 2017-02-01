@@ -366,9 +366,10 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $row->modified_on = JFactory::getDate()->toSql();
             $this->storePluginInternalData($data);
 
-            $tbl = $this->createPluginTableObject($this->_tablename, $this->tableFields, $row->id, $this->_tablepkey);
-            var_dump($row);
-//            die();
+            JTable::addIncludePath(JPATH_ROOT.'/plugins/vmpayment/cryptocoin/tables');
+            $tbl = JTable::getInstance('CryptoCoin', 'Table');
+            var_dump($tbl);
+            die();
             $row = (array)$row;
             $tbl->bindChecknStore($row);
             $sql = $db->getQuery(true)->select('count(*) as cnt')->from($this->_tablename)->where('addr='.$db->quote($resp->addr));
