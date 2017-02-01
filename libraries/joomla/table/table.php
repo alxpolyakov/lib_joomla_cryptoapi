@@ -277,6 +277,7 @@ abstract class JTable extends JObject implements JObservableInterface, JTableInt
 			jimport('joomla.filesystem.path');
 
 			$paths = self::addIncludePath();
+            var_dump($paths);
 			$pathIndex = 0;
 
 			while (!class_exists($tableClass) && $pathIndex < count($paths))
