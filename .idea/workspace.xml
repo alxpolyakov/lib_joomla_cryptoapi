@@ -28,8 +28,8 @@
       <file leaf-file-name="cryptocoin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4614472" vertical-offset="6289" max-vertical-offset="7254">
-              <caret line="371" column="116" selection-start-line="371" selection-start-column="116" selection-end-line="371" selection-end-column="116" />
+            <state vertical-scroll-proportion="0.48279953" vertical-offset="6235" max-vertical-offset="7218">
+              <caret line="369" column="27" selection-start-line="369" selection-start-column="27" selection-end-line="369" selection-end-column="27" />
               <folding>
                 <element signature="e#6#151#0#PHP" expanded="true" />
               </folding>
@@ -773,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4614472" vertical-offset="6289" max-vertical-offset="7254">
-          <caret line="371" column="116" selection-start-line="371" selection-start-column="116" selection-end-line="371" selection-end-column="116" />
+        <state vertical-scroll-proportion="0.48279953" vertical-offset="6235" max-vertical-offset="7218">
+          <caret line="369" column="27" selection-start-line="369" selection-start-column="27" selection-end-line="369" selection-end-column="27" />
           <folding>
             <element signature="e#6#151#0#PHP" expanded="true" />
           </folding>

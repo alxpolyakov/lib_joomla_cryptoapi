@@ -282,8 +282,6 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $data[$k] = $input->post->get($k);
         }
 
-        var_dump($data);
-
 
         if (!in_array($data['status'], array("payment_received", "payment_received_unrecognised"))){
             die('invalid status');
@@ -355,7 +353,6 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response-'.$order->virtuemart_order_id.'.json', 'w');
             fwrite($fp, json_encode($resp));
             fclose($fp);
-            var_dump($resp);
             if(!is_object($resp) && !is_array($resp)){
                 die('Invalid response');
             }
@@ -370,6 +367,7 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $this->storePluginInternalData($data);
 
             $tbl = $this->createPluginTableObject($this->_tablename, $this->tableFields, $row->id, $this->_tablepkey);
+            var_dump($row);
             $tbl->bindChecknStore($row);
             $sql = $db->getQuery(true)->select('count(*) as cnt')->from($this->_tablename)->where('addr='.$db->quote($resp->addr));
             $db->setQuery($sql);
