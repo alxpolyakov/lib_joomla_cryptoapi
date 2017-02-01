@@ -304,9 +304,9 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             die('Order not found');
         }
 
-        $fp = fopen(JFactory::getApplication()->get('tmp_path').'/inuital-data-'.$order->virtuemart_order_id.'.json', 'w');
-        fwrite($fp, json_encode($data));
-        fclose($fp);
+//        $fp = fopen(JFactory::getApplication()->get('tmp_path').'/inuital-data-'.$order->virtuemart_order_id.'.json', 'w');
+//        fwrite($fp, json_encode($data));
+//        fclose($fp);
 
         $method = $this->getVmPluginMethod($order->virtuemart_paymentmethod_id);
         if($method->private_key != $data['private_key']){
@@ -345,14 +345,14 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
 
             $post_data['h'] = md5(implode('', array_values($post_data)));
 
-            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/post-'.$order->virtuemart_order_id.'.json', 'w');
-            fwrite($fp, json_encode($post_data));
-            fclose($fp);
+//            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/post-'.$order->virtuemart_order_id.'.json', 'w');
+//            fwrite($fp, json_encode($post_data));
+//            fclose($fp);
 
             $resp = CryptoCoinHelper::check_payment($post_data);
-            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response-'.$order->virtuemart_order_id.'.json', 'w');
-            fwrite($fp, json_encode($resp));
-            fclose($fp);
+//            $fp = fopen(JFactory::getApplication()->get('tmp_path').'/response-'.$order->virtuemart_order_id.'.json', 'w');
+//            fwrite($fp, json_encode($resp));
+//            fclose($fp);
             if(!is_object($resp) && !is_array($resp)){
                 die('Invalid response');
             }
@@ -367,8 +367,6 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $this->storePluginInternalData($data);
 
 
-            var_dump($row);
-//            die();
             $row = (array)$row;
             $this->storePluginInternalData($row);
             $sql = $db->getQuery(true)->select('count(*) as cnt')->from($this->_tablename)->where('addr='.$db->quote($resp->addr));
