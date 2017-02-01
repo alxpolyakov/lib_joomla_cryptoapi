@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cryptocoin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cryptocoin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5516014" vertical-offset="5097" max-vertical-offset="7236">
+            <state vertical-scroll-proportion="-8.157895" vertical-offset="5097" max-vertical-offset="7236">
               <caret line="309" column="0" selection-start-line="306" selection-start-column="9" selection-end-line="309" selection-end-column="0" />
               <folding>
                 <element signature="e#6#151#0#PHP" expanded="true" />
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cryptocoin.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cryptocoin.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="2178">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.17925592" vertical-offset="291" max-vertical-offset="2160">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,10 +134,10 @@
         <option value="$PROJECT_DIR$/administrator/components/com_virtuemart/plugins/vmplugin.php" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/helper.php" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/table.php" />
-        <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/tables/table.php" />
         <option value="$PROJECT_DIR$/libraries/joomla/table/table.php" />
         <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php" />
+        <option value="$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml" />
       </list>
     </option>
   </component>
@@ -243,32 +243,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cryptocoin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cryptocoin.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cryptocoin.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vmpayment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cryptocoin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="2178">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/joomla/filesystem/path.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.02476415" vertical-offset="4929" max-vertical-offset="5796">
@@ -776,14 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51616764" vertical-offset="4609" max-vertical-offset="30600">
           <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/tables/cryptocoin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04245283" vertical-offset="0" max-vertical-offset="848">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -816,11 +774,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5516014" vertical-offset="5097" max-vertical-offset="7236">
+        <state vertical-scroll-proportion="-8.157895" vertical-offset="5097" max-vertical-offset="7236">
           <caret line="309" column="0" selection-start-line="306" selection-start-column="9" selection-end-line="309" selection-end-column="0" />
           <folding>
             <element signature="e#6#151#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/cryptocoin/cryptocoin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17925592" vertical-offset="291" max-vertical-offset="2160">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
