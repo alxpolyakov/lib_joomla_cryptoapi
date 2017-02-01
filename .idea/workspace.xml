@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/libraries/joomla/table/table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.53772455" vertical-offset="4555" max-vertical-offset="30636">
-              <caret line="284" column="86" selection-start-line="284" selection-start-column="86" selection-end-line="284" selection-end-column="86" />
+              <caret line="284" column="51" selection-start-line="284" selection-start-column="51" selection-end-line="284" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -423,13 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/vmpayment/paypal/paypal/tmpl/creditcardform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="2034">
-          <caret line="31" column="79" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/vmpayment/paybox/paybox/tmpl/render_pluginname.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7790698" vertical-offset="670" max-vertical-offset="1530">
@@ -840,10 +833,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/joomla/filesystem/path.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02476415" vertical-offset="4929" max-vertical-offset="5796">
+          <caret line="281" column="27" selection-start-line="281" selection-start-column="27" selection-end-line="281" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/joomla/table/table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53772455" vertical-offset="4555" max-vertical-offset="30636">
-          <caret line="284" column="86" selection-start-line="284" selection-start-column="86" selection-end-line="284" selection-end-column="86" />
+          <caret line="284" column="51" selection-start-line="284" selection-start-column="51" selection-end-line="284" selection-end-column="51" />
           <folding />
         </state>
       </provider>
