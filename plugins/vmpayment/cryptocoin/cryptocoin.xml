@@ -23,6 +23,7 @@
 	<files>
 		<folder>assets</folder>
 		<folder>fields</folder>
+		<folder>tables</folder>
 		<filename plugin="cryptocoin">cryptocoin.php</filename>
 		<filename plugin="cryptocoin">helper.php</filename>
 		<filename>index.html</filename>
