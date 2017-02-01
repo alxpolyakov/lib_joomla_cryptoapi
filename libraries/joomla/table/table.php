@@ -269,7 +269,6 @@ abstract class JTable extends JObject implements JObservableInterface, JTableInt
 		// Sanitize and prepare the table class name.
 		$type       = preg_replace('/[^A-Z0-9_\.-]/i', '', $type);
 		$tableClass = $prefix . ucfirst($type);
-        var_dump($tableClass);
 
 		// Only try to load the class if it doesn't already exist.
 		if (!class_exists($tableClass))
