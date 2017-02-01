@@ -369,7 +369,8 @@ class plgvmpaymentcryptocoin extends vmPSPlugin {
             $tbl = $this->createPluginTableObject($this->_tablename, $this->tableFields, $row->id, $this->_tablepkey);
             var_dump($row);
 //            die();
-            $tbl->bindChecknStore((array)$row);
+            $row = (array)$row;
+            $tbl->bindChecknStore($row);
             $sql = $db->getQuery(true)->select('count(*) as cnt')->from($this->_tablename)->where('addr='.$db->quote($resp->addr));
             $db->setQuery($sql);
             $num_payments = $db->loadObject();
