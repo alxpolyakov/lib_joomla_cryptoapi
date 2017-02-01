@@ -270,7 +270,6 @@ abstract class JTable extends JObject implements JObservableInterface, JTableInt
 		$type       = preg_replace('/[^A-Z0-9_\.-]/i', '', $type);
 		$tableClass = $prefix . ucfirst($type);
 
-        var_dump($tableClass);
 
 		// Only try to load the class if it doesn't already exist.
 		if (!class_exists($tableClass))
@@ -279,8 +278,7 @@ abstract class JTable extends JObject implements JObservableInterface, JTableInt
 			jimport('joomla.filesystem.path');
 
 			$paths = self::addIncludePath();
-            var_dump($paths);
-			$pathIndex = 0;
+        	$pathIndex = 0;
 
 			while (!class_exists($tableClass) && $pathIndex < count($paths))
 			{
